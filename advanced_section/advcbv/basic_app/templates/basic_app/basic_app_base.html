@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Base</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <ul class="nav navbar-nav">
+        <li><a href="{% url 'basic_app:list' %}" class="navbar-brand"><img src="https://png.pngtree.com/png-clipart/20190629/original/pngtree-vector-school-icon-png-image_4103083.jpg" alt="School Logo" height="35" width="35"> Schools</a></li>
+        <li><a href="{% url 'admin:index' %}" class="nav-link">Admin</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      {% block body_block %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
